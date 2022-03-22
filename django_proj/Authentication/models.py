@@ -8,3 +8,6 @@ class Authentication(models.Model):
 	phone_number = PhoneField()
 	email = models.EmailField(max_length=250)
 	password = models.CharField(max_length=50)
+
+	class Meta:
+		db_table = 'user_authentication'
